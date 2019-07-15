@@ -49,6 +49,7 @@ class New:
         matplotlib.plot(x, y, 'black')
         matplotlib.show()
 
+    # おっぱいを見せるのは外部から参照できても問題ない
     def show(self):
         x = numpy.arange(-3, 4 + 0.01, 0.01)
         y = self.__calculateOppaiY(x)
