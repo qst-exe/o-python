@@ -6,7 +6,7 @@
 
 ![文教大学](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/36927/a2247d02-bc91-7bd7-4253-67d7e83cbf3e.jpeg "文教大学")
 
-![名古屋大学](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/36927/c6f9f498-4d70-5356-7ccd-083a43cf1fbf.jpeg "名古屋大学")
+![首都大学東京](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/36927/14f99854-b862-e55a-a6f8-44a852dceb44.jpeg "首都大学東京")
 
 
 # Dependency
@@ -22,7 +22,7 @@ pip install matplotlib
 ```
 
 # Usage
-プロジェクトのルートディレクトリで、以下のコマンドを実行する。種類は(osaka・bunkyo・nagoya)の3種類。
+プロジェクトのルートディレクトリで、以下のコマンドを実行する。種類は(osaka・bunkyo・shuto)の3種類。
 
 ```bash
 python main.py [好みのおっぱい]

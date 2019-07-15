@@ -13,7 +13,7 @@ class New:
             return (0.8 * (e ** ((-x ** 2) / 2))) + (e ** (-(x - 1.4) ** 2)) + \
                    ((1 / 6) * (e ** (-(2 * x - 4.17) ** 2))) + ((1 / 8) * (e ** (-(6.9 * x - 8.3) ** 2)))
 
-        elif self.type == 'nagoya':
+        elif self.type == 'shuto':
             return (1.2 * numpy.exp(-0.5 * x ** 2)) + (numpy.exp(0.1 * x) - 1.3 ** (0.6 * x) - 1.1 ** -x) + \
                    (0.2 * numpy.exp(-7 * (x - 0.8) ** 8)) + (0.1 * numpy.exp(-(8 * x - 2) ** 2) - 1.1 ** (x - 6)) + \
                    (0.4 * numpy.exp(-0.04 * x ** 8)) + (0.4 * numpy.exp(-0.04 * (x + 3) ** 8)) + (1.2)
@@ -32,5 +32,5 @@ class New:
 
     # おっぱいを見せるのは外部から参照できても問題ない
     def show(self):
-        x = numpy.arange(-3, 4 + 0.01, 0.01)
+        x = numpy.arange(-5, 5 + 0.01, 0.01)
         self.__draw(x, self.__calculateOppaiY(x))
