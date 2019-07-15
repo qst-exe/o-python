@@ -23,7 +23,7 @@ class New:
                    (1 / 40) * ((numpy.absolute(1 - 2 ** 4 * (5 * x - 3) ** 4)) + (numpy.absolute(1 - 2 ** 9 * (5 * x - 3) ** 4)) + (2 - 528 * (5 * x - 3) ** 4))
 
     # おっぱい描画のロジックは見せない
-    def __plot(self, x, y):
+    def __draw(self, x, y):
         matplotlib.title(self.type)
         matplotlib.axes().set_aspect('equal', 'datalim')
         matplotlib.grid()
@@ -33,5 +33,4 @@ class New:
     # おっぱいを見せるのは外部から参照できても問題ない
     def show(self):
         x = numpy.arange(-3, 4 + 0.01, 0.01)
-        y = self.__calculateOppaiY(x)
-        self.__plot(x, y)
+        self.__draw(x, self.__calculateOppaiY(x))
