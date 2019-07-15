@@ -1,7 +1,9 @@
+import sys
 import opai
 
 def main():
-    p = opai.New()
+    args = sys.argv
+    p = opai.New(args[1])
     p.show()
 
 if __name__ == '__main__':

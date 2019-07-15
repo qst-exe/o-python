@@ -2,9 +2,11 @@ import numpy
 import matplotlib.pyplot as matplotlib
 
 class New:
-    def __init__(self, type='opai'):
+    # 初期値は大阪大学のおっぱいとする
+    def __init__(self, type='osaka'):
         self.type = type
 
+    # おっぱい計算のロジックは見せない
     def __calculateOppaiY(self, x):
         if self.type == 'bunkyo':
             e = numpy.e
@@ -39,7 +41,7 @@ class New:
 
             return y
 
-
+    # おっぱい描画のロジックは見せない
     def __plot(self, x, y):
         matplotlib.title(self.type)
         matplotlib.axes().set_aspect('equal', 'datalim')
